@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@executor-example/examples": ["examples/src/index.ts"],
+      "@executor-example/tsx-serve": ["libs/tsx-serve/src/index.ts"],
+      "@executor-example/tsx-watch": ["tsx-watch/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

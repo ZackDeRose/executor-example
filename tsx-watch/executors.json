@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "tsx-watch": {
+      "implementation": "./src/executors/tsx-watch/executor",
+      "schema": "./src/executors/tsx-watch/schema.json",
+      "description": "tsx-watch executor"
+    }
+  }
+}

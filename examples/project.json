@@ -1,0 +1,33 @@
+{
+  "name": "examples",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "examples/src",
+  "projectType": "library",
+  "targets": {
+    "watch-example": {
+      "executor": "@executor-example/tsx-watch:tsx-watch"
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["examples/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "examples/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
