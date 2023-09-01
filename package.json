@@ -1,0 +1,14 @@
+{
+  "name": "@executor-example/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "16.8.0-beta.5",
+    "@nx/workspace": "16.8.0-beta.5",
+    "nx": "16.8.0-beta.5",
+    "nx-cloud": "latest"
+  }
+}
