@@ -7,8 +7,6 @@ export default async function runExecutor(
   options: TsxWatchExecutorSchema,
   ctx: ExecutorContext
 ) {
-  console.log(JSON.stringify(ctx.projectsConfigurations, null, 2));
-
   execSync(`npx tsx ${options.fileName}`, {
     cwd: join(ctx.projectsConfigurations.projects[ctx.projectName].root, 'src'),
     stdio: 'inherit',

@@ -4,7 +4,7 @@
   "sourceRoot": "examples/src",
   "projectType": "library",
   "targets": {
-    "watch-example": {
+    "serve": {
       "executor": "@executor-example/tsx-watch:tsx-watch"
     },
     "lint": {
